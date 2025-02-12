@@ -7,4 +7,38 @@
   {% endfor %}
 </ul>
 
+<header>
+  <img src="/logo.svg" alt="logo FDND">
+</header>
+
+<main>
+  <section>
+    <h1>SQUAD PAGE</h1>
+    <label for="site search"></label>
+    <input type="search">
+    <button><img src="/filter_icon.svg" alt="filter"></button>
+  </section>
+
+  <article class="front-card">
+    <img src="" alt="">
+    <h2>{{ person.name }}</h2>
+    <p>{{ person.koffie_filter }}</p>
+    <button>MEER</button>
+  </article>
+
+  <article class="back-card">
+    <dl>
+      <dt>{{ person.name }}</dt>
+      <dd>{{ person.koffie_filter }}</dd>
+
+      <dt>BIO</dt>
+      <dd>{{ person.bio }}</dd>
+
+      <dt>LINKS</dt>
+      <dd><a href="#"></a><a href="#"></a></dd>
+    </dl>
+    <button>BACK</button>
+  </article>
+</main>
+
 {% render 'partials/foot.liquid', squads: squads %}
