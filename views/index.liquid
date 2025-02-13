@@ -20,30 +20,32 @@
     <button><img src="/filter_icon.svg" alt="filter"></button>
   </section>
 
-  {% for person in persons %}
-    <article class="front-card" style="background-image: url({{ person.avatar }});">
-      <h2>{{ person.name }}</h2>
+  <div class="cards">
+    {% for person in persons %}
+      <article class="front-card" style="background-image: url({{ person.avatar }});">
+        <h2>{{ person.name }}</h2>
 
-      <p>{{ person.koffie_filter }}</p>
-      <button>MEER</button>
-    </article>
-  {% endfor %}
+        <p>{{ person.koffie_filter }}</p>
+        <button>MEER</button>
+      </article>
+    {% endfor %}
 
-  {% for person in persons %}
-    <article class="back-card">
-      <dl>
-        <dt>{{ person.name }}</dt>
-        <dd>{{ person.koffie_filter }}</dd>
+    {% for person in persons %}
+      <article class="back-card">
+        <dl>
+          <dt>{{ person.name }}</dt>
+          <dd>{{ person.koffie_filter }}</dd>
 
-        <dt>BIO</dt>
-        <dd>{{ person.bio }}</dd>
+          <dt>BIO</dt>
+          <dd>{{ person.bio }}</dd>
 
-        <dt>LINKS</dt>
-        <dd><a href="#"></a><a href="#"></a></dd>
-      </dl>
-      <button>BACK</button>
-    </article>
-  {% endfor %}
+          <dt>LINKS</dt>
+          <dd><a href="#"></a><a href="#"></a></dd>
+        </dl>
+        <button>BACK</button>
+      </article>
+    {% endfor %}
+  </div>
 
 </main>
 
