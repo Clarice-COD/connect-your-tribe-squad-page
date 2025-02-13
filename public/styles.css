@@ -12,14 +12,6 @@ body {
     --second-highlight-color: #01ECCB;
 }
 
-h1 {
-    color: var(--first-text-color)
-}
-
-p {
-    color: var(--second-text-color)
-}
-
 header {
     background-color: var(--first-background-color);
     position: fixed;
@@ -36,6 +28,44 @@ main {
     right: 0;
     margin-top: 8rem;
     border-radius: 20px 20px 0px 0px;
+}
+
+.intro {
+    margin-top: 6rem;
+
+}
+
+h1 {
+    color: var(--first-text-color);
+    text-align: center;
+}
+
+p {
+    color: var(--second-text-color)
+}
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    height: 2rem;
+    width: 12rem;
+    background-color: var(--second-highlight-color);
+    border-radius: 5px;
+    border-color: var(--first-highlight-color);
+}
+
+.filter-btn {
+    height: 2rem;
+    background-color: var(--first-highlight-color);
+    border: none;
+    border-radius: 5px;
+}
+
+.filter-icon {
+    width: 2rem;
+    align-self: auto;
 }
 
 .cards{
