@@ -21,8 +21,7 @@
   </section>
 
   {% for person in persons %}
-    <article class="front-card">
-      <img src="{{ person.avatar }}" alt="">
+    <article class="front-card" style="background-image: url({{ person.avatar }});">
       <h2>{{ person.name }}</h2>
 
       <p>{{ person.koffie_filter }}</p>

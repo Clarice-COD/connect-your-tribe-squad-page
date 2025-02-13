@@ -11,3 +11,34 @@ body {
     --first-highlight-color: #2F2AB0;
     --second-highlight-color: #01ECCB;
 }
+
+
+
+
+h1 {
+    color: var(--first-text-color)
+}
+
+header {
+    background-color: var(--first-background-color);
+}
+
+main {
+    background-color: var(--second-background-color);
+}
+
+.front-card {
+
+}
+
+.back-card {
+    background-color: var(--third-background-color);
+}
+
+h2 {
+    color: var(--second-text-color)
+}
+
+dl {
+    color: var(--second-text-color)
+}
