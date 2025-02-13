@@ -12,30 +12,37 @@ body {
     --second-highlight-color: #01ECCB;
 }
 
-
-
-
 h1 {
     color: var(--first-text-color)
 }
 
 header {
     background-color: var(--first-background-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20rem;
 }
 
 main {
     background-color: var(--second-background-color);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 8rem;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1rem;
-    margin: 1rem;
+    margin: 2rem;
 }
 
 .front-card {
-
+    height: 22rem;
 }
 
 .back-card {
