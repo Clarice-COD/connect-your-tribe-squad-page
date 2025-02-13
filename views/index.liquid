@@ -9,10 +9,27 @@
 
 
 <header>
-  <img src="/logo.svg" alt="logo FDND">
+  <img class="logo" src="/logo.svg" alt="logo FDND">
 </header>
 
 <main>
+
+{% comment %} FILTER {% endcomment %}
+<section class="filter-menu">
+    <h3>Koffie filter</h3>
+    <div class="filters">
+      <a href="/cappuccino">Cappuccino</a>
+      <a href="/esma_Caramel_Frapu">Esma Caramel Frapu</a>
+      <a href="/espresso">Espresso</a>
+      <a href="/geen">Geen</a>
+      <a href="/irish_coffee">Irish coffee</a>
+      <a href="/koffie_verkeerd">Koffie verkeerd</a>
+      <a href="/latte">Latte</a>
+      <a href="/long">Long black</a>
+      <a href="/zwart">Met een gebakje</a>
+    </div>
+  </section>
+  
   <section class="intro">
     <h1>SQUAD PAGE</h1>
     <label for="site search"></label>
@@ -49,19 +66,6 @@
       </article>
     {% endfor %}
   </div>
-
-  <section class="menu-open">
-    <h3>Koffie filter</h3>
-    <a href="/cappuccino">Cappuccino</a>
-    <a href="/esma_Caramel_Frapu">Esma Caramel Frapu</a>
-    <a href="/espresso">Espresso</a>
-    <a href="/geen">Geen</a>
-    <a href="/irish_coffee">Irish coffee</a>
-    <a href="/koffie_verkeerd">Koffie verkeerd</a>
-    <a href="/latte">Latte</a>
-    <a href="/long">Long black</a>
-    <a href="/zwart">Met een gebakje</a>
-  </section>
 
 </main>
 
