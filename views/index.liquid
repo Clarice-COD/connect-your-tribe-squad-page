@@ -7,6 +7,7 @@
   {% endfor %}
 </ul> {% endcomment %}
 
+
 <header>
   <img src="/logo.svg" alt="logo FDND">
 </header>
@@ -20,31 +21,30 @@
   </section>
 
   {% for person in persons %}
-  <article class="front-card">
-    <img src="{{ person.avatar }}" alt="">
-    <h2>{{ person.name }}</h2>
+    <article class="front-card">
+      <img src="{{ person.avatar }}" alt="">
+      <h2>{{ person.name }}</h2>
 
-    <p>{{ person.koffie_filter }}</p>
-    <button>MEER</button>
-  </article>
+      <p>{{ person.koffie_filter }}</p>
+      <button>MEER</button>
+    </article>
   {% endfor %}
 
   {% for person in persons %}
+    <article class="back-card">
+      <dl>
+        <dt>{{ person.name }}</dt>
+        <dd>{{ person.koffie_filter }}</dd>
 
-  <article class="back-card">
-    <dl>
-      <dt>{{ person.name }}</dt>
-      <dd>{{ person.koffie_filter }}</dd>
+        <dt>BIO</dt>
+        <dd>{{ person.bio }}</dd>
 
-      <dt>BIO</dt>
-      <dd>{{ person.bio }}</dd>
-
-      <dt>LINKS</dt>
-      <dd><a href="#"></a><a href="#"></a></dd>
-    </dl>
-    <button>BACK</button>
-  </article>
-{% endfor %}
+        <dt>LINKS</dt>
+        <dd><a href="#"></a><a href="#"></a></dd>
+      </dl>
+      <button>BACK</button>
+    </article>
+  {% endfor %}
 
 </main>
 

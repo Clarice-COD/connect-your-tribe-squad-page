@@ -1,0 +1,13 @@
+body {
+    /* COLOR */
+    --first-background-color: #2F2AB0;
+    --second-background-color: #01ECCB;
+    --third-background-color: #050344;
+
+    --first-text-color: #050344;
+    --second-text-color: #01ECCB;
+    --third-text-color: #FFFFFF;
+
+    --first-highlight-color: #2F2AB0;
+    --second-highlight-color: #01ECCB;
+}
