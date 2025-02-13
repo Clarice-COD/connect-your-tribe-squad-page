@@ -23,10 +23,11 @@
   <div class="cards">
     {% for person in persons %}
       <article class="front-card" style="background-image: url({{ person.avatar }});">
-        <h2>{{ person.name }}</h2>
-
-        <p>{{ person.koffie_filter }}</p>
-        <button>MEER</button>
+        <div class="front-card-info">
+          <h2>{{ person.name }}</h2>
+          <p>{{ person.fav_coffee }}</p>
+          <button>MEER</button>
+        </div>
       </article>
     {% endfor %}
 
@@ -34,7 +35,7 @@
       <article class="back-card">
         <dl>
           <dt>{{ person.name }}</dt>
-          <dd>{{ person.koffie_filter }}</dd>
+          <dd>{{ person.fav_coffee }}</dd>
 
           <dt>BIO</dt>
           <dd>{{ person.bio }}</dd>

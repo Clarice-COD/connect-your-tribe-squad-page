@@ -16,6 +16,10 @@ h1 {
     color: var(--first-text-color)
 }
 
+p {
+    color: var(--second-text-color)
+}
+
 header {
     background-color: var(--first-background-color);
     position: fixed;
@@ -36,18 +40,30 @@ main {
 
 .cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    grid-gap: 2.5rem;
     margin: 2rem;
 }
 
-.front-card {
+.front-card, .back-card{
     height: 22rem;
+    border-radius: 1rem;
+}
+
+.front-card {
     background-color: var(--first-background-color);
+    object-fit: cover;
+}
+
+.front-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .back-card {
-    height: 22rem;
     background-color: var(--third-background-color);
 }
 
