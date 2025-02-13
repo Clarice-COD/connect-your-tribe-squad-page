@@ -43,9 +43,11 @@ main {
 
 .front-card {
     height: 22rem;
+    background-color: var(--first-background-color);
 }
 
 .back-card {
+    height: 22rem;
     background-color: var(--third-background-color);
 }
 
