@@ -1,11 +1,11 @@
 {% render 'partials/head.liquid', title: 'Squad page' %}
 
-<h2>Students</h2>
+{% comment %} <h2>Students</h2>
 <ul>
   {% for person in persons %}
     <li><a href="/student/{{ person.id }}">{{ person.name }}</a></li>
   {% endfor %}
-</ul>
+</ul> {% endcomment %}
 
 <header>
   <img src="/logo.svg" alt="logo FDND">
@@ -19,12 +19,17 @@
     <button><img src="/filter_icon.svg" alt="filter"></button>
   </section>
 
+  {% for person in persons %}
   <article class="front-card">
-    <img src="" alt="">
+    <img src="{{ person.avatar }}" alt="">
     <h2>{{ person.name }}</h2>
+
     <p>{{ person.koffie_filter }}</p>
     <button>MEER</button>
   </article>
+  {% endfor %}
+
+  {% for person in persons %}
 
   <article class="back-card">
     <dl>
@@ -39,6 +44,8 @@
     </dl>
     <button>BACK</button>
   </article>
+{% endfor %}
+
 </main>
 
 {% render 'partials/foot.liquid', squads: squads %}
