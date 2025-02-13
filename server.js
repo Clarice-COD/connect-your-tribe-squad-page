@@ -59,6 +59,77 @@ app.get('/', async function (request, response) {
   response.render('index.liquid', {persons: personResponseJSON.data, squads: squadResponseJSON.data})
 })
 
+// ALLE KOFFIE
+// app.get('/HappyBeans', async function (request, response) {
+//   const personResponse = await fetch('https://fdnd.directus.app/items/person/?fields=name,fav_coffee&filter[fav_coffee][_neq]=null}}}]}')
+//   const personResponseJSON = await personResponse.json()
+//   response.render('index.liquid', {persons: personResponseJSON.data, squads: squadResponseJSON.data})
+// })
+
+// CAPPUCCINO
+app.get('/cappuccino', async function (request, response) {
+  const personResponse = await fetch('https://fdnd.directus.app/items/person/?fields=name,fav_coffee&filter[fav_coffee][_eq]=Cappuccino')
+  const personResponseJSON = await personResponse.json()
+  response.render('index.liquid', {persons: personResponseJSON.data, squads: squadResponseJSON.data})
+})
+
+// ESMA CARAMEL FRAPU
+app.get('/esma_Caramel_Frapu', async function (request, response) {
+  const personResponse = await fetch('https://fdnd.directus.app/items/person/?fields=name,fav_coffee&filter[fav_coffee][_eq]=Esma%20Caramel%20Frapu')
+  const personResponseJSON = await personResponse.json()
+  response.render('index.liquid', {persons: personResponseJSON.data, squads: squadResponseJSON.data})
+})
+
+// ESPRESSO
+app.get('/espresso', async function (request, response) {
+  const personResponse = await fetch('https://fdnd.directus.app/items/person/?fields=name,fav_coffee&filter[fav_coffee][_eq]=Espresso')
+  const personResponseJSON = await personResponse.json()
+  response.render('index.liquid', {persons: personResponseJSON.data, squads: squadResponseJSON.data})
+})
+
+// GEEN
+app.get('/geen', async function (request, response) {
+  const personResponse = await fetch('https://fdnd.directus.app/items/person/?fields=name,fav_coffee&filter[fav_coffee][_eq]=Geen')
+  const personResponseJSON = await personResponse.json()
+  response.render('index.liquid', {persons: personResponseJSON.data, squads: squadResponseJSON.data})
+})
+
+// IRISH COFFEE
+app.get('/irish_coffee', async function (request, response) {
+  const personResponse = await fetch('https://fdnd.directus.app/items/person/?fields=name,fav_coffee&filter[fav_coffee][_eq]=Irish%20coffee')
+  const personResponseJSON = await personResponse.json()
+  response.render('index.liquid', {persons: personResponseJSON.data, squads: squadResponseJSON.data})
+})
+
+// KOFFIE VERKEERD
+app.get('/koffie_verkeerd', async function (request, response) {
+  const personResponse = await fetch('https://fdnd.directus.app/items/person/?fields=name,fav_coffee&filter[fav_coffee][_eq]=Koffie%20verkeerd')
+  const personResponseJSON = await personResponse.json()
+  response.render('index.liquid', {persons: personResponseJSON.data, squads: squadResponseJSON.data})
+})
+
+// LATTE
+app.get('/latte', async function (request, response) {
+  const personResponse = await fetch('https://fdnd.directus.app/items/person/?fields=name,fav_coffee&filter[fav_coffee][_eq]=Latte')
+  const personResponseJSON = await personResponse.json()
+  response.render('index.liquid', {persons: personResponseJSON.data, squads: squadResponseJSON.data})
+})
+
+// LONG
+app.get('/long', async function (request, response) {
+  const personResponse = await fetch('https://fdnd.directus.app/items/person/?fields=name,fav_coffee&filter[fav_coffee][_eq]=Long%20black')
+  const personResponseJSON = await personResponse.json()
+  response.render('index.liquid', {persons: personResponseJSON.data, squads: squadResponseJSON.data})
+})
+
+// ZWART
+app.get('/zwart', async function (request, response) {
+  const personResponse = await fetch('https://fdnd.directus.app/items/person/?fields=name,fav_coffee&filter[fav_coffee][_eq]=Zwart')
+  const personResponseJSON = await personResponse.json()
+  response.render('index.liquid', {persons: personResponseJSON.data, squads: squadResponseJSON.data})
+})
+
+
 // Maak een POST route voor de index; hiermee kun je bijvoorbeeld formulieren afvangen
 app.post('/', async function (request, response) {
   // Je zou hier data kunnen opslaan, of veranderen, of wat je maar wilt
